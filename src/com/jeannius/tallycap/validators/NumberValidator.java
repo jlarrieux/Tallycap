@@ -17,7 +17,7 @@ public class NumberValidator {
 		//if required and not null		
 		if(required && edittext.getText().length()==0)	valid = "is required";
 		else if(!isGoodNumber(edittext.getText().toString())) valid ="contains invalid characters";
-		 else if((required && edittext.getText().length()>0) || (required == false)){			
+		 else if((required && edittext.getText().length()>0) || (required == false && edittext.getText().length()>0)){			
 			
 			 if(!above_min(min, edittext)){
 				 if(isDate) valid =  String.format("must be between %d and %d", min.intValue(), max.intValue());

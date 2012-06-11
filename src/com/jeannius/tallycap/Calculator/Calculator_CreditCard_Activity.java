@@ -79,7 +79,7 @@ public class Calculator_CreditCard_Activity extends TrackedActivity {
 			if(currentBalanceEditText.getText().length()>0)
 				creditLimitValid = numval.validate(creditLimitEditText, Double.valueOf(currentBalanceEditText.getText().toString()), true, 1000000.0, false);
 			else creditLimitValid = numval.validate(creditLimitEditText, 1.0, true, 1000000.0,false);
-			annualFeeValid = numval.validate(annualFeeEditText, 0.0, false, 1000000.0,false);
+			 annualFeeValid = numval.validate(annualFeeEditText, 0.0, false, 1000000.0,false);
 			monthlyFeeValid = numval.validate(monthlyFeeEditText, 0.0, false, 1000000.0,false);
 			overTheLimitFeeValid = numval.validate(overTheLimitFeeEditText, 0.0, false, 1000000.0,false);
 			String sh ="";
