@@ -119,15 +119,25 @@ public class NumberValidator {
 	private Boolean isGoodNumber(String s){
 		
 		Boolean g= true;
+		boolean decimal =false;
 		Character c;
 	for(int i=0; i<s.length(); i++){
 		
 		c= s.charAt(i);
 		if(!Character.isDigit(c)){
-			g = false;
+			
 			Log.v("NUMBER_ERROR", String.format("%s is not a number", c));
-			break;
+			if(decimal == false){
+				Log.v("NUMBER_ERROR", String.format("%s is a decimal", c));
+				if(c.equals(".")) decimal= true;
+			}
+			else{
+				g=false;
+				break;
+			}
+			
 		}
+	  
 	}
 	
 	
