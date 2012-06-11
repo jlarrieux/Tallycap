@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/myrel">
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:text="@string/amount" android:id="@+id/budgetSettingsAmountTextView" style="@style/textView" android:layout_marginLeft="15dp" android:layout_marginTop="25dp"></TextView>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/budgetSettingsDueDateTextView" android:layout_alignRight="@+id/budgetSettingsAmountTextView" android:layout_below="@+id/budgetSettingsAmountTextView" android:text="@string/due_date" style="@style/textView" android:layout_marginTop="5dp"></TextView>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/budgetSettingsDueDateTextView" android:layout_alignRight="@+id/budgetSettingsDueDateTextView" android:id="@+id/budgetSettingsReminderTextView" android:text="@string/reminder" style="@style/textView" android:layout_marginTop="5dp"></TextView>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:id="@+id/budgetSettingsNameEditText" style="@style/textView" android:textStyle="bold" android:textSize="16dp"></TextView>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignBaseline="@+id/budgetSettingsAmountTextView" android:layout_alignBottom="@+id/budgetSettingsAmountTextView" android:id="@+id/budgetSettingsAmountEditText" android:layout_toRightOf="@+id/budgetSettingsAmountTextView" android:layout_marginLeft="5dp" style="@style/textView"></TextView>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignBottom="@+id/budgetSettingsDueDateTextView" android:layout_alignLeft="@+id/budgetSettingsAmountEditText" android:id="@+id/budgetSettingsDueDateEditText" style="@style/textView"></TextView>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignBaseline="@+id/budgetSettingsReminderTextView" android:layout_alignBottom="@+id/budgetSettingsReminderTextView" android:layout_alignLeft="@+id/budgetSettingsDueDateEditText" style="@style/textView" android:id="@+id/budgetSettingsReminderEditText"></TextView>
+    
+</RelativeLayout>

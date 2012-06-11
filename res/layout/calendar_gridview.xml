@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_height="fill_parent" android:background="@drawable/newrealg" android:layout_width="fill_parent" android:id="@+id/calendarMainContainerLinearLayout" android:gravity="center">
+
+
+	<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingBottom="10dp">
+		<ImageButton android:layout_width="wrap_content" android:src="@drawable/left_pointed_arrow" android:id="@+id/calendarLeftButton" android:layout_gravity="center" android:layout_height="wrap_content"></ImageButton>
+		<TextView android:layout_height="fill_parent" android:text="TextView" android:layout_width="fill_parent" android:layout_weight="1" android:gravity="center" android:background="#60000000" android:id="@+id/calendarMonthAndYearTextView" style="@style/textView" android:textStyle="bold" android:textSize="24dp"></TextView>
+		<ImageButton android:layout_width="wrap_content" android:src="@drawable/right_pointed_arrow" android:id="@+id/calendarRightButton" android:layout_height="fill_parent"></ImageButton>
+	
+	
+	</LinearLayout>
+	<ScrollView android:layout_width="fill_parent" android:id="@+id/scrollView1" android:layout_height="0dip" android:fillViewport="true" android:layout_weight="1">
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/calendarMainLinearLayout" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp"></LinearLayout>
+	</ScrollView>
+</LinearLayout>

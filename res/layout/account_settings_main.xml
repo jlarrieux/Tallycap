@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:id="@+id/accountMainLinearLayout" android:background="@drawable/newrealg">
+
+<ScrollView
+  
+  android:orientation="vertical"
+  android:fillViewport="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_weight="7">
+  
+    
+   
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/accountSettingsPhoneVerifyLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">
+
+            <Button
+                android:id="@+id/accountSettingsVerifyPhoneButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify Phone Number" android:textSize="11dp"/>
+
+            <Button
+                android:id="@+id/accountSettingsResendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend Verification" android:textSize="11dp"/>
+
+        </LinearLayout>
+        
+        <TextView android:text="@string/email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/accountSettingsEmailTextView" android:layout_marginLeft="128dp" style="@style/textView" android:layout_below="@+id/accountSettingsPhoneVerifyLinearLayout" android:layout_marginTop="10dp"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textView" android:layout_below="@+id/accountSettingsEmailTextView" android:layout_alignRight="@+id/accountSettingsEmailTextView" android:layout_marginTop="20dp" android:text="@string/first_name" android:id="@+id/accountSettingsFirstNameTextView"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textView" android:layout_marginTop="20dp" android:layout_alignRight="@+id/accountSettingsFirstNameTextView" android:layout_below="@+id/accountSettingsFirstNameTextView" android:text="@string/last_name" android:id="@+id/accountSettingsLastNameTextView"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textView" android:id="@+id/accountSettingsCountryTextView" android:layout_below="@+id/accountSettingsLastNameTextView" android:layout_alignRight="@+id/accountSettingsEmailTextView" android:text="@string/country" android:layout_marginTop="20dp"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/accountSettingsPhoneAlertTextView" android:text="@string/phone_alert" style="@style/textView" android:layout_marginTop="20dp" android:layout_below="@+id/accountSettingsEmailAlertTextView" android:layout_alignRight="@+id/accountSettingsEmailTextView"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/accountSettingsEmailAlertTextView" android:text="@string/email_alert" style="@style/textView" android:layout_marginTop="20dp" android:layout_below="@+id/accountSettingsCountryTextView" android:layout_alignRight="@+id/accountSettingsEmailTextView"></TextView>
+        <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/accountSettingsEmailEditText" android:layout_alignBaseline="@id/accountSettingsEmailTextView" android:layout_toRightOf="@id/accountSettingsEmailTextView" android:layout_marginLeft="5dp" style="@style/textView"></TextView>
+        <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/accountSettingsEmailEditText" style="@style/textView" android:layout_alignBaseline="@+id/accountSettingsFirstNameTextView" android:id="@+id/accountSettingsFirstNameEditText"></TextView>
+        <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/accountSettingsCountryEditText" style="@style/textView" android:layout_alignBaseline="@+id/accountSettingsCountryTextView" android:layout_toRightOf="@+id/accountSettingsCountryTextView" android:layout_marginLeft="5dp"></TextView>
+        <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/accountSettingsEmailEditText" style="@style/textView" android:layout_alignBaseline="@+id/accountSettingsLastNameTextView" android:id="@+id/accountSettingsLastNameEditText"></TextView>
+        <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/accountSettingsPhoneAlertEditText" android:layout_alignBaseline="@+id/accountSettingsPhoneAlertTextView" android:layout_alignLeft="@+id/accountSettingsEmailEditText" style="@style/textView"></TextView>
+        <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/accountSettingsEmailAlertEditText" android:layout_alignBaseline="@+id/accountSettingsEmailAlertTextView" android:layout_alignLeft="@+id/accountSettingsEmailEditText" style="@style/textView"></TextView>
+        <RelativeLayout android:id="@+id/AccountSettingsLinLayout" android:layout_below="@+id/accountSettingsPhoneAlertTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <TextView android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/accountSettingsPhoneCarrierTextView" android:text="@string/phone_carrier" style="@style/textView" android:layout_marginLeft="76dp"></TextView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/accountSettingsPhoneNumberTextView" android:text="@string/phone_number" style="@style/textView" android:layout_below="@+id/accountSettingsPhoneCarrierTextView" android:layout_alignRight="@+id/accountSettingsPhoneCarrierTextView" android:layout_marginTop="20dp"></TextView>
+            <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textView" android:layout_alignBaseline="@+id/accountSettingsPhoneCarrierTextView" android:layout_toRightOf="@+id/accountSettingsPhoneCarrierTextView" android:layout_marginLeft="5dp" android:id="@+id/accountSettingsPhoneCarrierEditText"></TextView>
+            <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textView" android:layout_toRightOf="@+id/accountSettingsPhoneNumberTextView" android:layout_alignBaseline="@+id/accountSettingsPhoneNumberTextView" android:layout_marginLeft="5dp" android:id="@+id/accountSettingsPhoneNumberEditText"></TextView>
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:gravity="center" android:layout_below="@+id/AccountSettingsLinLayout" android:layout_alignParentLeft="true" android:layout_marginTop="25dp">
+            <Button android:layout_height="wrap_content" android:id="@+id/accountSettingsEditButton" android:text="@string/edit" android:layout_width="120dp" android:textSize="11dp"></Button>
+            <Button android:id="@+id/accountSettingsChangePasswordButton" android:gravity="center" android:layout_gravity="center" android:text="@string/change_password" android:layout_height="wrap_content" android:layout_width="120dp" android:textSize="11dp"></Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+   
+    
+</ScrollView>
+
+<include
+    android:id="@+id/include1"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    layout="@layout/admod_adview" android:layout_gravity="center"/>
+
+ </LinearLayout>

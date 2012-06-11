@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.jeannius.tallycap"
+    android:id="@+id/ScrollView1HomeActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/newrealg" >
+
+    <LinearLayout
+        android:id="@+id/tred"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" android:gravity="center">
+
+<!--         <TextView -->
+<!--             android:id="@+id/textView1" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:singleLine="true" -->
+<!--             android:ellipsize="marquee" -->
+<!--             android:marqueeRepeatLimit="marquee_forever" -->
+<!--             android:focusable="true" -->
+<!--             android:focusableInTouchMode="true" -->
+<!--             android:scrollHorizontally="true" -->
+<!--             android:text="Hit the menu button to provide your feedback."              -->
+<!--             android:layout_marginTop="10dp" style="@style/EditText"/> -->
+
+	<com.jeannius.tallycap.admin.ScrollTextView
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"		
+		style="@style/EditText" 
+		android:text="Please send feedback by clicking on the menu button and selection feeback." android:id="@+id/scrolltext" android:layout_marginTop="2dp"/>t
+
+        <RelativeLayout
+            android:id="@+id/HomeRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginBottom="7dp">
+
+            <com.jeannius.tallycap.admin.MyImageButton
+                android:id="@+id/homeReminderMyImageButton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignRight="@+id/homeAccountMyImageButton"
+                android:layout_marginTop="0dp"
+                custom:imagesource="@drawable/reminder_state"
+                android:orientation="vertical"
+                custom:textBelow="Reminders"/>
+
+            <com.jeannius.tallycap.admin.MyImageButton
+                android:id="@+id/homeCalendarMyImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/homeReminderMyImageButton"
+                android:layout_alignBottom="@+id/homeReminderMyImageButton"
+                android:layout_alignTop="@+id/homeReminderMyImageButton"
+                android:layout_toRightOf="@+id/homeReminderMyImageButton"
+                custom:imagesource="@drawable/calendar_state"
+                android:orientation="vertical"
+                custom:textBelow="Calendar"/>
+
+            <com.jeannius.tallycap.admin.MyImageButton
+                android:id="@+id/homeAccountMyImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homeReminderMyImageButton"
+                custom:imagesource="@drawable/account_state"
+                android:orientation="vertical"
+                custom:textBelow="Account" android:layout_marginTop="10dp"/>
+
+            <com.jeannius.tallycap.admin.MyImageButton
+                android:id="@+id/homeCalculatorMyImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/homeAccountMyImageButton"
+                android:layout_alignLeft="@+id/homeCalendarMyImageButton"
+                android:layout_alignTop="@+id/homeAccountMyImageButton"
+                android:layout_below="@+id/homeCalendarMyImageButton"
+                android:layout_toRightOf="@+id/homeAccountMyImageButton"
+                android:gravity="center"
+                custom:imagesource="@drawable/calculator_state"
+                android:orientation="vertical"
+                custom:textBelow="Calculator" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homeCalculatorMyImageButton"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal" android:layout_alignRight="@+id/homeCalculatorMyImageButton" android:layout_alignLeft="@+id/homeReminderMyImageButton">
+
+                <Button
+                    android:id="@+id/homeLocalResetButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/homeMasterResetButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Button" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/linearLayout1" >
+
+                <TextView
+                    android:id="@+id/textTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:inputType="textMultiLine" />
+            </ScrollView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

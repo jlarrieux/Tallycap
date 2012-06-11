@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:background="@drawable/my_border2_gold">
+
+    <TextView
+        android:id="@+id/calendarItemPopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="name" android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/calendarItemPopFrequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="frequency" android:layout_below="@+id/calendarItemPopName" android:layout_marginRight="15dp" android:layout_alignLeft="@+id/calendarItemPopName"/>
+
+    <TextView
+        android:id="@+id/calendarItemPopType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="type" android:layout_alignBaseline="@+id/calendarItemPopFrequency" android:layout_toRightOf="@+id/calendarItemPopFrequency" android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/calendarItemPopAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="amount" android:layout_alignBaseline="@+id/calendarItemPopFrequency" android:layout_toRightOf="@+id/calendarItemPopFrequency" android:layout_alignParentRight="true" android:gravity="right" android:layout_marginRight="5dp"/>
+
+</RelativeLayout>

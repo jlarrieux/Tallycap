@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="10dp" android:fillViewport="true" android:layout_height="wrap_content" android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/reminderChooseDateLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/reminderChooseDateSelectedTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" android:layout_marginLeft="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:gravity="center" android:layout_marginBottom="10dp" android:minHeight="45dp">
+
+        <Button
+            android:id="@+id/reminderChooseDateOkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/ok" android:layout_marginRight="10dp" android:minWidth="80dp"/>
+
+        <Button
+            android:id="@+id/reminderChooseDateResetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/reset" android:layout_marginRight="10dp" android:minWidth="80dp"/>
+
+        <Button
+            android:id="@+id/reminderChooseDateCancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/cancel" android:minWidth="80dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

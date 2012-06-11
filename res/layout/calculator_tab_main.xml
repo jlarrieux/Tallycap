@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+android:orientation="vertical"
+ android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:id="@+id/calculatorMainLinearLayout" android:background="@drawable/newrealg">
+
+<TabHost   
+  android:layout_width="fill_parent"
+  android:layout_height="0dip"
+  android:id="@android:id/tabhost" android:layout_weight="7">
+  
+  <ScrollView
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:fillViewport="true">
+  
+	  <LinearLayout
+	  	android:orientation="vertical"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent"
+	  	android:id="@+id/tab_lin">
+	  	
+	  	<TabWidget
+	  		android:id="@android:id/tabs"
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="60dp"
+	  		android:baselineAligned="false"	 	
+	  				/>
+	  		
+	  		
+	  
+	  	<FrameLayout
+	  		android:id="@android:id/tabcontent"
+	  		android:layout_width="wrap_content"
+	  		android:layout_height="fill_parent"
+	  		>	
+	  	
+	  	</FrameLayout>
+	  	<FrameLayout 
+	  	    android:id="@+android:id/realtabcontent"
+	  	    android:layout_width="match_parent"
+	  	    android:layout_height="0dp"
+	  	    android:layout_weight="1"/>
+	  	
+	  
+	  </LinearLayout>
+  </ScrollView>
+</TabHost>
+
+<include
+    android:id="@+id/include1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    layout="@layout/admod_adview" android:layout_gravity="center"/>
+	
+</LinearLayout>

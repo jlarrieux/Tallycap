@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/creditCardCurrentBalanceTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="11dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp"
+                    android:text="     Current Balance: "
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/creditCardAprTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/creditCardCurrentBalanceTextView"
+                    android:layout_below="@id/creditCardCurrentBalanceTextView"
+                    android:paddingBottom="11dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="14dp"
+                    android:text="APR %: "
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/creditCardCreditLimitTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/creditCardCurrentBalanceTextView"
+                    android:layout_below="@id/creditCardAprTextView"
+                    android:paddingBottom="11dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="14dp"
+                    android:text="Credit Limit: "
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/creditCardMonthlyFeeTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/creditCardCurrentBalanceTextView"
+                    android:layout_below="@id/creditCardCreditLimitTextView"
+                    android:paddingBottom="11dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="14dp"
+                    android:text="Monthly fee: "
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/creditCardAnnualFeeTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/creditCardCurrentBalanceTextView"
+                    android:layout_below="@id/creditCardMonthlyFeeTextView"
+                    android:paddingBottom="11dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="14dp"
+                    android:text="Annual Fee: "
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/creditCardOverTheLimitTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/creditCardCurrentBalanceTextView"
+                    android:layout_below="@id/creditCardAnnualFeeTextView"
+                    android:paddingBottom="11dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="14dp"
+                    android:text="Over the limit fee: "
+                    android:textSize="11sp" />
+
+                <EditText
+                    android:id="@+id/creditCardCurrentBalanceEditText"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@id/creditCardCurrentBalanceTextView"
+                    android:layout_toRightOf="@id/creditCardCurrentBalanceTextView"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/creditCardAprEditText"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@id/creditCardAprTextView"
+                    android:layout_toRightOf="@id/creditCardCurrentBalanceTextView"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6" />
+
+                <EditText
+                    android:id="@+id/creditCardCreditLimitEditText"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@id/creditCardCreditLimitTextView"
+                    android:layout_toRightOf="@id/creditCardCurrentBalanceTextView"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6" />
+
+                <EditText
+                    android:id="@+id/creditCardMonthlyFeeEditText"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@id/creditCardMonthlyFeeTextView"
+                    android:layout_toRightOf="@id/creditCardCurrentBalanceTextView"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6" />
+
+                <EditText
+                    android:id="@+id/creditCardAnnualFeeEditText"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@id/creditCardAnnualFeeTextView"
+                    android:layout_toRightOf="@id/creditCardCurrentBalanceTextView"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6" />
+
+                <EditText
+                    android:id="@+id/creditCardOverTheLimitFeeEditText"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@id/creditCardOverTheLimitTextView"
+                    android:layout_toRightOf="@id/creditCardCurrentBalanceTextView"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6" />
+
+                <Spinner
+                    android:id="@+id/creditCardAnnualFeeMonthSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@id/creditCardAnnualFeeTextView"
+                    android:layout_toRightOf="@id/creditCardAnnualFeeEditText" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingTop="20dp" >
+
+                <Button
+                    android:id="@+id/creditCardCalculateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calculate" />
+
+                <Button
+                    android:id="@+id/creditCardWhatIfButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/creditCardCalculateButton"
+                    android:text="@string/what_if" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/creditCardResultTextView"
+                style="@style/textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioGroup
+                    android:id="@+id/k401kRadioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp" >
+
+                    <RadioButton
+                        android:id="@+id/k401k_simple_state_selector"
+                        style="@style/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:paddingRight="40dp"
+                        android:text="@string/simple"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/k401k_advanced_state_selector"
+                        style="@style/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="@string/advanced"
+                        android:textSize="14sp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/k401kannualPayTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/k401kRadioGroup"
+                    android:paddingBottom="11dp"
+                    android:paddingLeft="60dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/annual_pay"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/k401kYourContributionTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/k401kannualPayTextView"
+                    android:layout_below="@id/k401kannualPayTextView"
+                    android:paddingBottom="11dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="14dp"
+                    android:text="Contribution: "
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/k401kContributionTypeTextview"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/k401kannualPayTextView"
+                    android:layout_below="@id/k401kYourContributionTextView"
+                    android:gravity="right"
+                    android:paddingBottom="11dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="14dp"
+                    android:text="Contribution Type: "
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/k401kYearsToRetireTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/k401kannualPayTextView"
+                    android:layout_below="@id/k401kContributionTypeTextview"
+                    android:gravity="right"
+                    android:paddingBottom="25dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="14dp"
+                    android:text="Years to Retirement: "
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/k401kRateOfReturnTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/k401kannualPayTextView"
+                    android:layout_below="@id/k401kYearsToRetireTextView"
+                    android:gravity="right"
+                    android:paddingBottom="25dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Rate of Return: "
+                    android:textSize="11sp" />
+
+                <EditText
+                    android:id="@+id/k401kAnnualPayEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/k401kannualPayTextView"
+                    android:layout_toRightOf="@id/k401kannualPayTextView"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:paddingTop="5dp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/k401kContributionEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/k401kYourContributionTextView"
+                    android:layout_toRightOf="@id/k401kYourContributionTextView"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:paddingTop="5dp" />
+
+                <EditText
+                    android:id="@+id/k401kYearsToRetirementEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/k401kYearsToRetireTextView"
+                    android:layout_toRightOf="@id/k401kYearsToRetireTextView"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:paddingTop="5dp" />
+
+                <EditText
+                    android:id="@+id/k401kRateOfReturnEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/k401kRateOfReturnTextView"
+                    android:layout_toRightOf="@id/k401kRateOfReturnTextView"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:paddingTop="5dp" />
+
+                <Spinner
+                    android:id="@+id/k401kContributionTypeSpinner"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@id/k401kContributionTypeTextview"
+                    android:layout_toRightOf="@id/k401kContributionTypeTextview"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/k401kAnnualIncreaseTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/k401kannualPayTextView"
+                    android:layout_below="@id/k401kRateOfReturnTextView"
+                    android:gravity="right"
+                    android:paddingBottom="25dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Annual Increase: "
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/k401kCurrentSavingsTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/k401kAnnualIncreaseTextView"
+                    android:layout_below="@id/k401kAnnualIncreaseTextView"
+                    android:gravity="right"
+                    android:paddingBottom="25dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Current Savings: "
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/k401kEmployerMatchTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/k401kCurrentSavingsTextView"
+                    android:layout_below="@id/k401kCurrentSavingsTextView"
+                    android:gravity="right"
+                    android:paddingBottom="25dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Employer Match: "
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/k401kEmployerLimitTextView"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/k401kEmployerMatchTextView"
+                    android:layout_below="@id/k401kEmployerMatchTextView"
+                    android:gravity="right"
+                    android:paddingBottom="25dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Employer Limit: "
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/k401kAnnualIncreaseEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/k401kAnnualIncreaseTextView"
+                    android:layout_toRightOf="@id/k401kAnnualIncreaseTextView"
+                    android:hint="in %"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:paddingTop="5dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/k401kCurrentSavingsEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/k401kCurrentSavingsTextView"
+                    android:layout_toRightOf="@id/k401kCurrentSavingsTextView"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:paddingTop="5dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/k401kEmployerMatchEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/k401kEmployerMatchTextView"
+                    android:layout_toRightOf="@id/k401kEmployerMatchTextView"
+                    android:hint="% contribution"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:paddingTop="5dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/k401kEmployerLimitEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/k401kEmployerLimitTextView"
+                    android:layout_toRightOf="@id/k401kEmployerLimitTextView"
+                    android:hint="% of pay"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:paddingTop="5dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp" >
+
+                <Button
+                    android:id="@+id/k401kCalculateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calculate" />
+
+                <Button
+                    android:id="@+id/k401kWhatIfButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/k401kCalculateButton"
+                    android:text="@string/what_if" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/k401kResultTextView"
+                style="@style/textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

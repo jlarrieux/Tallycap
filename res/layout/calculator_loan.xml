@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calculatorLoanMainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/loanRadioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp" >
+
+                <RadioButton
+                    android:id="@+id/calculator_auto_selector_button"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/auto"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/calculator_mortgage_selector_button"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/mortgage"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/calculator_general_selector_button"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/general"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3" >
+
+                <TextView
+                    android:id="@+id/dater"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="25dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp"
+                    android:text="         Start Date: "
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/dateButton"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/dater"
+                    android:layout_toRightOf="@id/dater"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/dater"
+                    android:layout_below="@id/dater"
+                    android:paddingBottom="25dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/loan_amount"
+                    android:textSize="11sp" />
+
+                <EditText
+                    android:id="@+id/loan"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/tv1"
+                    android:layout_toRightOf="@id/tv1"
+                    android:inputType="numberDecimal"
+                    android:maxHeight="50dp"
+                    android:maxLength="8" android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/tv2"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/tv1"
+                    android:layout_below="@id/tv1"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/interest_rate"
+                    android:textSize="11sp" />
+
+                <EditText
+                    android:id="@+id/interest"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@id/tv2"
+                    android:layout_alignLeft="@id/loan"
+                    android:layout_below="@id/loan"
+                    android:layout_toRightOf="@id/tv2"
+                    android:inputType="numberDecimal"
+                    android:maxHeight="20dp"
+                    android:maxLength="8" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/tv2"
+                    android:layout_below="@id/tv2"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Length:"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/tv3"
+                    android:layout_below="@id/tv3"
+                    android:gravity="right"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Payment Freq.:"
+                    android:textSize="11sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@id/interest"
+                    android:layout_alignTop="@id/tv3"
+                    android:layout_below="@id/interest"
+                    android:layout_toRightOf="@id/tv3"
+                    android:maxHeight="20dp"
+                    android:prompt="@string/loan_terms"
+                    android:textColor="#FF000000" />
+
+                <Spinner
+                    android:id="@+id/spinner_frequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@id/spinner_terms"
+                    android:layout_alignTop="@id/tv4"
+                    android:layout_below="@id/spinner_terms"
+                    android:layout_toRightOf="@id/tv4"
+                    android:maxHeight="20dp"
+                    android:prompt="@string/loan_frequency"
+                    android:textColor="#FF000000" />
+
+                <EditText
+                    android:id="@+id/terms"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@id/interest"
+                    android:layout_alignTop="@id/tv3"
+                    android:layout_below="@id/interest"
+                    android:layout_toRightOf="@id/tv3"
+                    android:maxHeight="20dp"
+                    android:maxLength="8"
+                    android:numeric="integer"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spinner_length_frequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@id/terms"
+                    android:layout_toRightOf="@id/terms"
+                    android:textColor="#FF000000"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">
+
+                <Button
+                    android:id="@+id/loanCalculateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="@string/calculate" />
+
+                <Button
+                    android:id="@+id/loanWhatIfButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:enabled="false"
+                    android:text="@string/what_if" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/loanResultText"
+                style="@style/textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

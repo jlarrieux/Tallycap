@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/CreateLoginMain" android:paddingBottom="10dp">
+  
+  
+  <ScrollView android:layout_width="fill_parent" android:layout_weight="1" android:fillViewport="false" android:scrollbars="vertical" android:layout_height="0dip">
+  
+  <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical" android:paddingBottom="15dp">
+
+      <TextView
+          android:id="@+id/LoginEmailTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="True"
+          android:layout_alignParentTop="true"
+          android:layout_below="@+id/LoginLastNameTextView"
+          android:layout_marginLeft="78dp"
+          android:text="@string/email" android:layout_marginTop="20dp" android:layout_marginBottom="24dp">
+      </TextView>
+
+      <TextView
+          android:id="@+id/LoginPasswordTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignRight="@+id/LoginEmailTextView"
+          android:layout_below="@+id/LoginEmailTextView"
+          android:text="@string/password" android:layout_marginBottom="24dp">
+      </TextView>
+
+      <TextView
+          android:id="@+id/RetypePasswordTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/retypePassword" android:layout_below="@+id/LoginPasswordTextView" android:layout_alignRight="@+id/LoginPasswordTextView" android:paddingBottom="15dp"/>
+
+      <EditText
+          android:id="@+id/LoginRetypePasswordEditText"
+          android:layout_width="260dp"
+          android:layout_height="40dp"
+          android:inputType="textPassword" android:layout_toRightOf="@+id/RetypePasswordTextView" android:layout_alignBaseline="@+id/RetypePasswordTextView" android:layout_alignBottom="@+id/RetypePasswordTextView" android:layout_alignLeft="@+id/LoginEmailEditText"/>
+
+      <RelativeLayout
+          
+          android:id="@+id/LoginSignUpRelativeLayout"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/RetypePasswordTextView" >
+
+          <TextView
+              android:id="@+id/LoginCountryTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/LoginLastNameTextView"
+              android:layout_marginTop="15dp"
+              android:text="@string/country" android:layout_alignRight="@+id/LoginFirstNameTextView">
+          </TextView>
+
+          <TextView
+              android:id="@+id/EmailAlertTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignRight="@+id/LoginCountryTextView"
+              android:layout_below="@+id/LoginCountryTextView"
+              android:layout_marginTop="32dp"
+              android:paddingBottom="20dp"
+              android:text="@string/email_alert" >
+          </TextView>
+
+          <Spinner
+              android:id="@+id/LoginCountrySpinner"
+              android:layout_width="260dp"
+              android:layout_height="40dp"
+              android:layout_alignLeft="@+id/LoginFirstNameEditText"
+              android:layout_alignTop="@+id/LoginCountryTextView"
+              android:prompt="@string/choose_country" >
+          </Spinner>
+
+          <CheckBox
+              android:id="@+id/LoginEmailAlertCheckBox"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_alignBaseline="@+id/EmailAlertTextView"
+              android:layout_alignLeft="@+id/LoginCountrySpinner" >
+          </CheckBox>
+
+          <TextView
+              android:id="@+id/TextAlertTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignRight="@+id/EmailAlertTextView"
+              android:layout_below="@+id/EmailAlertTextView"
+              android:layout_marginBottom="10dp"
+              android:paddingBottom="20dp"
+              android:text="@string/phone_alert" >
+          </TextView>
+
+          <CheckBox
+              android:id="@+id/LoginPhoneAlertCheckBox"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_alignBaseline="@+id/TextAlertTextView"
+              android:layout_alignLeft="@+id/LoginEmailAlertCheckBox" >
+          </CheckBox>
+
+          <TextView
+              android:id="@+id/PhoneNumberTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignRight="@+id/PhoneCarrierTextView"
+              android:layout_below="@+id/PhoneCarrierTextView"
+              android:layout_marginTop="10dp"
+              android:paddingBottom="25dp"
+              android:text="@string/phone_number"
+              android:visibility="gone" >
+          </TextView>
+
+          <EditText
+              android:id="@+id/LoginPhoneNumberEditText"
+              android:layout_width="260dp"
+              android:layout_height="40dp"
+              android:layout_alignBaseline="@+id/PhoneNumberTextView"
+              android:layout_alignBottom="@+id/PhoneNumberTextView"
+              android:layout_alignLeft="@+id/LoginPhoneAlertCheckBox"
+              android:inputType="phone"
+              android:visibility="gone" >
+          </EditText>
+
+          <TextView
+              android:id="@+id/PhoneCarrierTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignRight="@+id/TextAlertTextView"
+              android:layout_below="@+id/TextAlertTextView"
+              android:paddingBottom="25dp"
+              android:text="@string/phone_carrier"
+              android:visibility="gone" >
+          </TextView>
+
+          <Spinner
+              android:id="@+id/LoginPhoneCarrierSpinner"
+              android:layout_width="260dp"
+              android:layout_height="40dp"
+              android:layout_alignLeft="@+id/LoginPhoneNumberEditText"
+              android:layout_alignTop="@+id/PhoneCarrierTextView"
+              android:visibility="gone" >
+          </Spinner>
+
+          <TextView
+              android:id="@+id/LoginFirstNameTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/first_name" android:layout_marginLeft="45dp" android:layout_marginTop="10dp">
+          </TextView>
+
+          <TextView
+              android:id="@+id/LoginLastNameTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/LoginFirstNameTextView"
+              android:layout_marginTop="24dp"
+              android:text="@string/last_name" android:layout_alignRight="@+id/LoginFirstNameTextView">
+          </TextView>
+
+          <EditText
+              android:id="@+id/LoginLastNameEditText"
+              android:layout_width="260dp"
+              android:layout_height="40dp"
+              android:layout_alignBaseline="@+id/LoginLastNameTextView"
+              android:layout_alignLeft="@+id/LoginFirstNameEditText"
+              android:inputType="textPersonName" >
+          </EditText>
+
+          <EditText
+              android:id="@+id/LoginFirstNameEditText"
+              android:layout_width="260dp"
+              android:layout_height="40dp"
+              android:layout_alignBaseline="@+id/LoginFirstNameTextView"
+              android:layout_marginLeft="10dp"
+              android:layout_toRightOf="@+id/LoginFirstNameTextView"
+              android:inputType="textPersonName" >
+          </EditText>
+
+      </RelativeLayout>
+
+      <EditText
+          android:id="@+id/LoginEmailEditText"
+          android:layout_width="260dp"
+          android:layout_height="40dp"
+          android:layout_alignBaseline="@+id/LoginEmailTextView"
+          android:layout_alignBottom="@+id/LoginEmailTextView"
+          android:layout_marginLeft="10dp"
+          android:layout_toRightOf="@+id/LoginEmailTextView"
+          android:inputType="textEmailAddress" >
+
+          <requestFocus >
+          </requestFocus>
+      </EditText>
+
+      <EditText
+          android:id="@+id/LoginPasswordEditText"
+          android:layout_width="260dp"
+          android:layout_height="40dp"
+          android:layout_alignBaseline="@+id/LoginPasswordTextView"
+          android:layout_alignLeft="@+id/LoginEmailEditText"
+          android:inputType="textPassword" >
+      </EditText>
+  </RelativeLayout>
+ 
+    </ScrollView>
+    
+    <LinearLayout   android:orientation="horizontal" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingBottom="5dp" android:paddingTop="5dp">
+        <Button android:layout_width="wrap_content" android:text="@string/signin" android:id="@+id/LoginSignInButton" android:layout_marginRight="10dp" android:layout_height="40dp"></Button>
+        <Button android:layout_width="wrap_content" android:id="@+id/LoginSignUpButton" android:layout_marginRight="10dp" android:text="@string/signup" android:layout_height="40dp"></Button>
+
+        <Button
+            android:id="@+id/LoginSendPasswordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/send" android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/LoginForgotPasswordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/forgotPassword" android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/LoginCancel2Button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/backtosigin" android:layout_marginRight="10dp"/>
+
+        <Button android:layout_width="wrap_content" android:id="@+id/LoginCancelButton" android:text="@string/cancel" android:layout_height="40dp" android:paddingTop="5dp"></Button>
+    
+    </LinearLayout>
+</LinearLayout>

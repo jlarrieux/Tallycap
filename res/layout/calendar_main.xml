@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@drawable/newrealg">
+
+<!--     <LinearLayout -->
+<!--         android:id="@+id/calendarLinearLayout" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="fill_parent" android:layout_weight="7" android:gravity="center_horizontal"> -->
+<!--     </LinearLayout> -->
+<com.jeannius.tallycap.Calendar.CalendarFull
+    android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_weight="7" android:id="@+id/calendarCalendarFull"/>
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/admod_adview" android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical" android:background="@drawable/my_border2_gold">
+<ScrollView
+    		android:layout_width="fill_parent"
+    android:layout_height="0dip" android:layout_weight="1" android:background="@color/translucent_black">
+
+<RelativeLayout
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/translucent_black"
+    android:paddingBottom="15dp"
+    android:paddingRight="20dp" >
+
+    <TextView
+        android:id="@+id/reminderAddItemNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/enterBillName" />
+
+    <EditText
+        android:id="@+id/reminderAddItemNameEditText"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/reminderAddItemNameTextView"
+        android:layout_toRightOf="@+id/reminderAddItemNameTextView" android:maxLength="20" android:inputType="textCapWords">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/reminderAddItemAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/reminderAddItemNameTextView"
+        android:layout_below="@+id/reminderAddItemNameEditText"
+        android:layout_marginTop="24dp"
+        android:text="@string/enterBillAmount" />
+
+    <EditText
+        android:id="@+id/reminderAddItemAmountEditText"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/reminderAddItemAmountTextView"
+        android:layout_alignLeft="@+id/reminderAddItemNameEditText"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal" android:maxLength="6"/>
+
+    <TextView
+        android:id="@+id/reminderAddItemOccurrenceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/reminderAddItemNameTextView"
+        android:layout_below="@+id/reminderAddItemNameTextView"
+        android:layout_marginTop="120dp"
+        android:text="Occurrence" />
+
+    <TextView
+        android:id="@+id/reminderAddItemTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/reminderAddItemNameTextView"
+        android:layout_below="@+id/reminderAddItemAmountTextView"
+        android:layout_marginTop="15dp"
+        android:paddingTop="9dp"
+        android:text="Type:" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reminderAddItemOccurrenceTextView"
+        android:layout_alignRight="@+id/reminderAddItemNameEditText"
+        android:layout_below="@+id/reminderAddItemOccurrenceTextView"
+        android:background="@drawable/my_border2_gold">
+
+        <TextView
+            android:id="@+id/reminderAddItemFrequencyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/enterBillFrequency" />
+
+        <Spinner
+            android:id="@+id/reminderAddItemFrequencySpinner"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@+id/reminderAddItemFrequencyTextView"
+            android:layout_toRightOf="@+id/reminderAddItemFrequencyTextView"
+            android:entries="@array/item_frequency_chooser" />
+
+        <TextView
+            android:id="@+id/reminderAddItemParameterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/reminderAddItemFrequencyTextView"
+            android:layout_below="@+id/reminderAddItemFrequencyTextView"
+            android:layout_marginTop="34dp"
+            android:text="Date:" />
+
+        <ImageButton
+            android:id="@+id/reminderAddItemDateImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reminderAddItemFrequencySpinner"
+            android:layout_toRightOf="@+id/reminderAddItemParameterTextView"
+            android:src="@android:drawable/ic_menu_my_calendar" />
+
+        <TextView
+            android:id="@+id/reminderAddItemChosenDateTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:inputType="textMultiLine" android:layout_toRightOf="@+id/reminderAddItemDateImageButton" android:layout_alignBaseline="@+id/reminderAddItemDateImageButton" android:layout_below="@+id/reminderAddItemFrequencySpinner" android:layout_alignBottom="@+id/reminderAddItemDateImageButton" android:layout_alignTop="@+id/reminderAddItemDateImageButton" android:gravity="center"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/reminderAddItemReminderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/reminderAddItemNameTextView"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="35dp"
+        android:text="Reminder" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_below="@+id/reminderAddItemReminderTextView"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/my_border2_gold"
+        android:gravity="left" >
+
+        <Spinner
+            android:id="@+id/reminderAddItemReminderSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/reminder_array_year" android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/reminderAddItemDaysPriorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="days prior" android:layout_toRightOf="@+id/reminderAddItemReminderSpinner" android:layout_alignBaseline="@+id/reminderAddItemReminderSpinner"/>
+
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/reminderAddItemTypeSpinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reminderAddItemAmountEditText"
+        android:layout_alignTop="@+id/reminderAddItemTypeTextView"
+        android:entries="@array/item_type" />
+</RelativeLayout>
+
+</ScrollView>
+
+<LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp" android:gravity="center" android:background="@color/translucent_black">
+
+    <Button
+        android:id="@+id/reminderAddItemCreateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/create" android:layout_marginRight="5dp" android:minWidth="80dp"/>
+
+    <Button
+        android:id="@+id/reminderAddItemCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/cancel" android:minWidth="80dp"/>
+
+</LinearLayout>
+
+</LinearLayout>

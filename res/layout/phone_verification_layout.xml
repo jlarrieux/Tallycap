@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:background="@color/translucent_black">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/phoneVerificationCodeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Code:" android:layout_marginTop="30dp" android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/phoneVerificationCodeEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" android:layout_toRightOf="@+id/phoneVerificationCodeTextView" android:layout_alignBaseline="@+id/phoneVerificationCodeTextView" android:layout_marginLeft="5dp" android:layout_marginRight="10dp" android:maxLength="9">
+
+                <requestFocus />
+            </EditText>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center" android:layout_marginTop="10dp" android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/phoneVerificationVerifyButton"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Verify" />
+
+            <Button
+                android:id="@+id/phoneVerificationResendButton"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Resend" />
+
+            <Button
+                android:id="@+id/PhoneVerificationCancelButton"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

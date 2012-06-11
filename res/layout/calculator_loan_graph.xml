@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:orientation="vertical" >
+<ScrollView
+	
+	android:layout_width="fill_parent"
+  	android:fillViewport="true"
+  	android:background="@drawable/newrealg" android:layout_height="fill_parent" android:layout_weight="7">
+
+<LinearLayout  
+  android:layout_width="fill_parent"
+  android:orientation="vertical"
+  android:paddingTop="10dp" 
+  android:paddingLeft="10dp" android:layout_height="wrap_content">
+  
+
+  	<TextView
+  		android:id="@+id/banner"
+  		style="@style/textView"	
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content" 		/>
+   
+  <RelativeLayout
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"  	>
+  	<TextView
+  		android:id="@+id/extraText"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:paddingTop="15dp"
+  		style="@style/textView"	
+  		android:paddingBottom="5dp"
+  		android:text="@string/add_an_extra_"/>
+  		
+  	<EditText
+  		android:id="@+id/extraInput"
+  		android:layout_width="100dp"
+  		android:layout_height="40dp"
+  		android:layout_toRightOf="@id/extraText"
+  		android:layout_alignBaseline="@id/extraText"
+  		android:numeric="decimal"/>
+  		
+  	<TextView
+  		android:id="@+id/extraText2"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:text="on year "
+  		android:paddingTop="20dp"
+  		style="@style/textView"	
+  		android:paddingBottom="10dp"
+  		android:layout_below="@id/extraInput"
+  		android:layout_alignRight="@id/extraText"/>
+  		
+  	<Spinner
+  		android:id="@+id/graphSpinner"
+  		android:layout_width="wrap_content"
+  		android:layout_height="40dp"
+  		android:layout_toRightOf="@id/extraText2"
+  		android:layout_alignBottom="@id/extraText2"/>
+  		
+  	<Button
+  		android:id="@+id/goButton"
+  		android:layout_width="wrap_content"
+  		android:layout_height="40dp"
+  		android:layout_toRightOf="@id/extraInput"
+  		android:layout_alignBaseline="@id/extraInput"
+  		android:text="Go"/>
+  	<Button
+  		android:id="@+id/repaint"
+  		android:layout_width="wrap_content"
+  		android:layout_height="40dp"
+  		android:paddingTop="10dp"
+  		android:visibility="gone"
+  		android:layout_toRightOf="@id/extraInput"
+  		android:layout_below="@id/goButton"
+  		android:text="rep"
+  		/>
+  
+  </RelativeLayout>
+  <TextView
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="wrap_content"
+ 	android:paddingTop="15dp"
+ 	android:id="@+id/dateText" 	>
+ </TextView>
+ <TextView
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="wrap_content"  	
+ 	android:id="@+id/dateText2">
+ </TextView>
+ <TextView
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="wrap_content" 	
+ 	android:paddingBottom="5dp"
+ 	android:id="@+id/dateText3">
+ </TextView>
+  <LinearLayout
+  	android:id="@+id/graph"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	>
+  
+  </LinearLayout>
+ 
+ 
+</LinearLayout>
+</ScrollView>
+
+<include
+    android:id="@+id/include1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    layout="@layout/admod_adview" android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:weightSum="1" android:paddingLeft="5dp" android:paddingRight="5dp" android:background="@color/translucent_black">
+    <RelativeLayout android:id="@+id/RelativeLayout1" android:layout_weight="0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@color/translucent_black">
+
+        <ImageView
+            android:id="@+id/TallycapImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/icon" >
+</ImageView>
+        <TextView android:id="@+id/TallycapTextView" android:layout_width="fill_parent" android:textColor="#FFFFFF" android:layout_toRightOf="@+id/TallycapImageView" android:text="@string/app_name" android:textSize="35dp" android:background="@color/translucent_black" android:layout_height="wrap_content" android:cursorVisible="false" android:layout_marginTop="24dp" android:layout_alignBaseline="@+id/TallycapImageView"></TextView>
+        <TextView android:background="@color/translucent_black" android:id="@+id/TallycapVersionTextview" android:layout_height="wrap_content" android:text="Version: " android:layout_width="wrap_content" android:textColor="#ffffff" android:textSize="12dp" android:layout_below="@+id/TallycapTextView" android:layout_alignLeft="@+id/TallycapTextView" android:layout_marginTop="5dp" android:layout_marginLeft="2dp"></TextView>
+        <TextView android:background="@color/translucent_black" android:id="@+id/TextView1" android:textSize="12dp" android:layout_height="wrap_content" android:text="@string/versionName" android:layout_width="wrap_content" android:textColor="#ffffff" android:layout_alignBaseline="@+id/TallycapVersionTextview" android:layout_toRightOf="@+id/TallycapVersionTextview"></TextView>
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:id="@+id/scrollView1" android:layout_weight="0" android:layout_height="fill_parent" android:fillViewport="true">
+        <TextView android:inputType="textMultiLine" android:background="@color/translucent_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#ffffff" android:id="@+id/aboutEulaTextView" android:text="@string/eula" android:paddingTop="10dp" android:paddingLeft="5dp" android:layout_marginLeft="5dp">
+            <requestFocus></requestFocus>
+        </TextView>
+    </ScrollView>
+    
+</LinearLayout>

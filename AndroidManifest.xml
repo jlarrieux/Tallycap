@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.jeannius.tallycap"
+      android:versionCode="8"
+      android:versionName="@string/versionName">
+    <uses-sdk android:minSdkVersion="4" 
+        android:targetSdkVersion="13"  />
+   
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="false">
+        <activity android:label="@string/app_name" android:name=".HomeScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+           	
+        </activity>
+        <activity android:name=".CalculatorActivity"></activity>
+        <activity android:name=".CalculatorActivity2"/>
+        <activity android:name=".Calculator.Calculator_Loan_Activity" ></activity>
+        <activity android:name=".Calculator.Calculator_401k_Activity" ></activity>
+        <activity android:name=".Calculator.Calculator_Loan_Grapher" ></activity>
+        <activity android:name="com.google.ads.AdActivity" 
+        			android:configChanges="keyboardHidden|keyboard|orientation|uiMode|screenSize|smallestScreenSize|screenLayout"></activity>
+		
+		<meta-data android:name="com.mobclix.APPLICATION_ID" android:value="65D900BF-3C66-42E8-AC1F-02036B3D7653"/>
+		<activity android:name="com.mobclix.android.sdk.MobclixBrowserActivity" 	/>
+		<activity android:name=".Calculator.Calculator_CreditCard_Activity" ></activity>
+		<activity android:name=".Calculator.Calculator_Savings_Activity" ></activity>
+		<activity android:name=".Calculator.Calculator_401k_Grapher" ></activity>
+		<activity android:name=".Calculator.Calculator_CreditCard_Grapher"></activity>
+		<activity android:name=".Calculator.Calculator_Savings_Grapher"></activity>
+		<activity android:name=".RemindersActivity"></activity>
+		<activity android:name=".Reminders.RemindersLoanActivity"></activity>
+		<activity android:name=".Reminders.RemindersIncomeActivity"></activity>
+		<activity android:name=".Reminders.RemindersOtherActivity"></activity>
+		<activity android:name=".Reminders.RemindersUtilitiesActivity"></activity>
+		<activity android:name=".CalendarActivity"></activity>
+		<activity android:name=".AccountSettingsActivity" ></activity>
+		<activity android:name=".actionbar.ActionBarActivity"></activity>
+		<activity android:name=".actionbar.MainActivity" android:theme="@style/AppTheme"></activity>
+		
+		
+    </application>
+    
+</manifest>

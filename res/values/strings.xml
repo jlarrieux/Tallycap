@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="versionName">2.71</string>
+	<string name="versionCode">1</string>
+    <string name="app_name">Tallycap</string>
+    <string name="interest_rate">Interest Rate: </string>
+    <string name="loan_amount">Amount: </string>
+    <string name="loan_terms">Terms: </string>
+    <string-array name="mortgage_terms">
+        <item>30 Years</item>
+        <item>15 Years</item>    
+    </string-array>
+    
+    <string-array name="auto_terms">
+    	<item> 24 Months</item>
+    	<item> 36 Months</item>
+    	<item> 48 Months</item>
+    	<item> 60 Months</item>
+    	<item> 72 Months</item>
+    </string-array>
+    
+    <string-array name="loan_frequency_chooser">
+    	<item> Monthly</item>
+    	<item> Biweekly</item>
+    	<item> Weekly</item>    	
+    </string-array>
+    
+      <string-array name="term_frequency_chooser">
+    	<item> years</item>
+    	<item> months</item>
+    	<item> weeks</item>    	
+    </string-array>
+    
+   <string-array name="k401k_contribution_type">
+    	<item>% of pay</item>
+    	<item>fixed $</item>    	   	
+    </string-array>
+    
+    <string-array name ="credit_month">
+    	<item>January</item>
+    	<item>February</item>
+    	<item>March</item>
+    	<item>April</item>
+    	<item>May</item>
+    	<item>June</item>
+    	<item>July</item>
+    	<item>August</item>
+    	<item>September</item>
+    	<item>October</item>
+    	<item>November</item>
+    	<item>December</item>
+    </string-array>
+    <string-array name ="reminder_array_month">
+    	<item>None</item>
+    	<item>Same Day</item>
+    	<item>1</item>
+    	<item>2</item>
+    	<item>3</item>
+		<item>4</item>
+    	<item>5</item>
+    	<item>6</item>
+    	<item>7</item>
+    	<item>8</item>
+    	<item>9</item>
+    	<item>10</item>
+    	<item>11</item>
+    	<item>12</item>
+    	<item>13</item>
+    	<item>14</item>    
+    </string-array>
+    
+    <string-array name ="reminder_array_week">
+    	<item>None</item>
+    	<item>Same Day</item>
+    	<item>1</item>
+    	<item>2</item>
+    	<item>3</item>
+		<item>4</item>
+    	<item>5</item>
+    	<item>6</item>
+    </string-array>
+    
+    <string-array name ="reminder_array_year">
+    	<item>None</item>
+    	<item>Same Day</item>
+    	<item>1</item>
+    	<item>2</item>
+    	<item>3</item>
+		<item>4</item>
+    	<item>5</item>
+    	<item>6</item>
+    	<item>7</item>
+    	<item>8</item>
+    	<item>9</item>
+    	<item>10</item>
+    	<item>11</item>
+    	<item>12</item>
+    	<item>13</item>
+    	<item>14</item>
+    	<item>15</item>
+    	<item>16</item>
+    	<item>17</item>
+    	<item>18</item>
+		<item>19</item>
+    	<item>20</item>
+    	<item>21</item>
+    	<item>22</item>
+    	<item>23</item>
+    	<item>24</item>
+    	<item>25</item>
+    	<item>26</item>
+    	<item>27</item>
+    	<item>28</item>
+    	<item>29</item>
+    	<item>30</item>
+    </string-array>
+    
+    <string-array name="feedBackOptions">
+    	<item >1. General Comments</item>
+    	<item >2. Request Feature</item>
+    </string-array>
+    
+        <string name="calculate">Calculate</string>
+        <string name="loanCalcPayText">Your payments are: </string>
+        <string name="what_if">What if?</string>
+        <string name="auto">Auto</string>
+        <string name="mortgage">Mortgage</string>
+        <string name="general">General</string>
+        <string name="your_annual_gross_pay">Your annual Gross Pay: </string>
+        <string name="add_an_extra_">Add an extra: $</string>
+        <string name="end_date">End Date</string>
+        <string name="regular">Regular</string>
+        <string name="modified">Modified</string>
+        <string name="loan">Loan</string>
+        <string name="you_would_save">You would save</string>
+        <string name="by_going_with_modified_payments">by going with the modified payment plan</string>
+        <string name="loan_frequency">Loan Frequency</string>
+        <string name="simple">Simple</string>
+        <string name="advanced">Advanced</string>
+        <string name="annual_pay">Annual Pay: </string>
+        <string name="ga_api_key">UA-28886137-1</string>
+        <string name="help">Help</string>
+        <string name="about">About</string>
+        <string name="updates"></string>
+        <string name="eula" >By using the information, tools, features and functionality of this application, you agree to be bound by this Agreement. 
+        You may not use our services and you may not accept this agreement if you are not of legal age to form a binding contract. 
+        If you accept this agreement, you represent that you have the capacity to be bound by it or if you are acting on behalf of a company or 
+        entity that you have the authority to bind such entity. \n\n\n
+
+The scope of this application is to allow the average user to do a much more in-depth forecast and planning that includes interest calculation, 
+“what if” scenarios, and much more. We use graphs and charts to help customers visualize their budget and to help with the understanding of our
+ forecast. We have an awareness and educational mission to help the public understand what the important details for the most common financial 
+ contracts (credit cards, mortgage, loans…) TallyCap exists to fill a void in the market place. We believe we bring a much needed service in those 
+ insecure financial times and tie it in with awareness and education so the customer is better informed and well prepared for future financial 
+ decisions.\n\n\n
+
+TallyCap does not endorse, warrant or guarantee the products or services available through any other third-party products or services advertised 
+on or linked from our application. TallyCap is not an agent or broker or otherwise responsible for the activities or policies of those advertisers. 
+We do not guarantee that the loan, investment, plan or other service terms, rates or rewards offered by any particular advertiser or other third party 
+in our application are actually the terms that may be offered to you if you pursue the offer or that they are the best terms or lowest rates available 
+in the market. You are pursuing those offers from third-parties at your own risk.\n\n\n
+
+You agree that you will not use any program, algorithm or methodology to access, acquire, copy or monitor TallyCap or any portion of our application, 
+without our express written consent, which may be withheld in our sole discretion. You consent to not attempt to decipher, decompile, disassemble, or 
+reverse-engineer any of the software comprising or in any way making up a part of our application.\n\n\n
+
+The content and all services and products associated with our application are provided to you on an “as-is” and “as available” basis. We make no 
+warranties of any kind as to the content or operation of our application. We make no guarantee that the content that maybe available through the 
+application or the service is free from infection from any viruses or other code or computer programs that contain contaminating or destructive 
+properties or that are intended to damage any system or personal information. TallyCap is not intended to provide legal, tax, or financial advice 
+and is not a broker or tax advisor. You agree that your use of the service is at your sole risk.\n\n\n
+
+TallyCap is not responsible or liable to you or any third party for any damage arising in whole or in part from your access to our application. 
+You shall defend and hold harmless TallyCap and its officers, directors, shareholders, and employees, from and against all claims and expenses, 
+including but not limited to attorneys fees, in whole or in part arising out of or attributable to any breach of this Agreement by you. We reserve 
+the right to, at any time, terminate this legal agreement with you.\n\n\n
+
+We may modify this Agreement from time to time. It is your responsibility to check for any and all changes to this agreement and in addition, 
+the Agreement will always indicate the date it was last revised. You are deemed to accept and agree to be bound by any changes to the Agreement when 
+you use the service after those changes are posted. \n\n\n
+
+If any portion of this Agreement is deemed unlawful, void or unenforceable by any arbitrator or court of competent jurisdiction, this agreement 
+as a whole shall not be deemed unlawful, void or unenforceable, but only that portion of this Agreement that is unlawful, void or unenforceable shall be stricken from this Agreement.
+
+        </string>
+        <string name="feedback">Feedback</string>
+        <string name="info">Info</string>
+        <string name="amount">Amount:</string>
+        <string name="due_date">Due Date:</string>
+        <string name="reminder">Reminder:</string>
+        <string name="enterBillName">Name:</string>
+        <string name="enterBillAmount">Amount:</string>
+        <string name="enterBillDueDate">Due Date:</string>
+        <string name="enterBillFrequency">Frequency:</string>
+        <string name="Occurrence">Occurrence:</string>
+        <string name="lastHappen">Starting on</string>
+        <string name="onThe">This event is on the</string>
+        <string name="ofEveryMonth">of every month.</string>
+        <string name="dateRange">must be between 1 and 31</string>
+        <string name="email">Email:</string>
+        <string name="first_name">First Name:</string>
+        <string name="last_name">Last Name:</string>
+        <string name="phone_number">Phone Number:</string>
+        <string name="phone_carrier">Phone Carrier:</string>
+        <string name="zipcode">Zipcode:</string>
+        <string name="gender">Gender: </string>
+        <string name="phone_alert">Phone Reminder:</string>
+        <string name="email_alert">Email Reminder:</string>
+        <string name="change_password">Change Password</string>
+        <string name="edit_Email">Edit your Email: </string>
+        <string name="password">Password:</string>
+        <string name="retypePassword">Retype Password:</string>
+        <string name="country">Country:</string>
+        <string name="cancel">Cancel</string>
+        <string name="submit">Submit</string>
+        <string name="signup">Sign Up</string>
+        <string name="signin">Sign In</string>
+        <string name="choose_country">Choose your country</string>
+        
+        <string-array name="us_phone_carriers">
+            <item>Verizon Wireless</item>
+            <item>Nextel</item>
+            <item>T-Mobile USA</item>
+            <item>Virgin Mobile USA</item>
+            <item>MetroPCS</item>
+            <item>AT&amp;T Mobility</item>
+            <item>Sprint</item>
+            <item>Cellular South</item>
+            <item>Cricket Wireless</item>
+            <item>U.S. Cellular</item>
+        </string-array>
+            <string name="edit">Edit</string>
+            
+        <string-array name="item_frequency_chooser">
+	    	<item> weekly</item>
+	    	<item> biweekly</item>
+	    	<item> semimonthly</item>  
+	    	<item> monthly</item>
+	    	<item> yearly</item>  	
+    	</string-array>
+    	
+        <string-array name="item_type">
+	    	<item> Loan</item>
+	    	<item> Utility</item>
+	    	<item> Income</item>  
+	    	<item> Other</item>
+	    		
+    	</string-array>  
+	    	<string name="create">Create</string>
+	    	
+	   <string-array name="add_item_reminder_weekly">
+	    	<item>0</item>
+	    	<item>1</item>
+	    	<item>2</item>  
+	    	<item>3</item>
+	    		
+    	</string-array>  
+	    	<string name="ok">Ok</string>  
+	    	<string name="subject">"Subject: "</string>  
+	    	<string name="send">Send</string>  
+	    	<string name="forgotPassword">Forgot Password?</string>  
+	    	<string name="sendPassword">Send Password</string>  
+	    	<string name="backtosigin">Back to Signin</string>  
+	    	<string name="reset">Reset</string>  
+	    	<string name="sendFeedback">Send us your feedback</string> 
+        <string name="alternate_title">An alternate title that is long</string>
+    <string name="toggle_title">Toggle title</string>
+
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_share">Share</string>
+    <string name="flurry_api_key">99FPLC4LPM197LBTJXS5</string>
+</resources>

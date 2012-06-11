@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/reminderElementNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:text="@string/enterBillName" style="@style/textView" android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/reminderElementAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reminderElementNameTextView"
+        android:text="@string/enterBillAmount" android:layout_marginTop="5dp" style="@style/textViewWith12" android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/reminderElementTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type:" style="@style/textViewWith12" android:layout_marginLeft="5dp" android:layout_below="@+id/reminderElementAmountTextView" android:layout_alignRight="@+id/reminderElementAmountTextView"/>
+
+    <TextView
+        android:id="@+id/reminderELementDueDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/reminderElementFrequencyTextView"
+        android:layout_below="@+id/reminderElementFrequencyTextView"
+        android:text="Date:" style="@style/textViewWith12"/>
+
+    <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/reminderElementTypeTextView"
+        android:layout_alignTop="@+id/reminderElementAmountTextView"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_dark" android:background="#89E8E595" android:layout_toRightOf="@+id/reminderElementAmountTextView" android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:id="@+id/reminderElementFrequencyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/reminderElementAmountTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="@string/enterBillFrequency" style="@style/textViewWith12"/>
+
+    <TextView
+        android:id="@+id/reminderElementReminderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reminder" style="@style/textViewWith12" android:layout_toRightOf="@+id/ImageView01" android:layout_marginLeft="5dp" android:layout_alignTop="@+id/reminderElementAmountTextView"/>
+
+    <TextView
+        android:id="@+id/reminderElementAmountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reminderElementAmountTextView"
+        android:layout_toRightOf="@+id/reminderElementAmountTextView" android:layout_marginLeft="5dp" style="@style/textViewWith12"/>
+
+    <TextView
+        android:id="@+id/reminderElementTypeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reminderElementTypeTextView"
+        style="@style/textViewWith12" android:layout_toRightOf="@+id/reminderElementTypeTextView" android:layout_marginLeft="5dp" android:layout_alignBaseline="@+id/reminderElementTypeTextView"/>
+
+    <TextView
+        android:id="@+id/reminderElementFrequenctyEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reminderElementFrequencyTextView"
+        android:layout_alignBottom="@+id/reminderElementFrequencyTextView"
+        android:layout_toRightOf="@+id/reminderElementFrequencyTextView"
+        style="@style/textViewWith12" android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/reminderElementDateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reminderELementDueDateTextView"
+        android:layout_alignBottom="@+id/reminderELementDueDateTextView"
+        android:layout_toRightOf="@+id/reminderELementDueDateTextView" android:layout_marginLeft="5dp" style="@style/textViewWith12"/>
+
+    <TextView
+        android:id="@+id/reminderElementReminderEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reminderElementReminderTextView"
+        android:layout_alignBottom="@+id/reminderElementReminderTextView"
+        style="@style/textViewWith12" android:layout_toRightOf="@+id/reminderElementReminderTextView" android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#89E8E595"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_dark" android:layout_alignTop="@+id/reminderElementAmountTextView" android:layout_alignBottom="@+id/reminderElementAmountTextView" android:layout_marginLeft="260dp"/>
+
+</RelativeLayout>
+
