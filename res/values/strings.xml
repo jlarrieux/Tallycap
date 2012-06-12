@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="versionName">2.71</string>
+	<string name="versionName">2.72</string>
 	<string name="versionCode">1</string>
     <string name="app_name">Tallycap</string>
     <string name="interest_rate">Interest Rate: </string>
